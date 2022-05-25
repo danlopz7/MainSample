@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MainSample</string>
+    <string name="fragment_intro">PostList: </string>
+    <string name="fragment_detail">Photo Details: </string>
+</resources>

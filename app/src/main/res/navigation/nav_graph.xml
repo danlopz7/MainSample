@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/itemListFragment">
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="com.example.homework5beta1.ui.itemsList.ItemListFragment"
+        android:label="@string/fragment_intro">
+        <action
+            android:id="@+id/action_itemListFragment_to_imageDetailFragment"
+            app:destination="@id/imageDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageDetailFragment"
+        android:name="com.example.homework5beta1.ui.photodetail.ImageDetailFragment"
+        android:label="@string/fragment_detail">
+        <argument
+            android:name="selectedPhoto"
+            app:argType="com.example.domain.model.Photos" />
+    </fragment>
+</navigation>
